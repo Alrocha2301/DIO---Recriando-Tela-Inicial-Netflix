@@ -1,0 +1,123 @@
+:root {
+   --vermelho: #E50914;
+   --preto: #141414;
+   --branco: #AAA;
+   --maisBranco: #fff;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.logo {
+   color: var(--vermelho);
+   font-family: 'Arial Black', 'Times New Roman', Times, serif;
+   font-size: 40px;
+   margin-left: 10px;
+}
+
+body {
+   /* flex-direction: column;
+   display: flex; */
+   background: var(--preto);
+   font-family: Arial, Helvetica, sans-serif;
+   color: var(--branco);
+   text-align: justify;
+}
+
+header .container {
+   display: flex;
+   flex-direction: row;
+   align-items:  center;
+   justify-content: space-between;
+}
+
+a {
+   text-decoration: none;
+   color: var(--branco);
+   padding: 0 10px;
+}
+
+a:hover {
+   color: var(--maisBranco);
+}
+
+/* .descricao {
+
+} */
+
+.filmePrincipal {
+   display: flex;
+   font-size: 18px;
+
+   height: 400px;
+   background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/capa_house.png');
+
+   background-size: cover;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+}
+
+.descricao {
+   margin-top: 10px;
+   margin-bottom: 40px;
+
+}
+
+.titulo {
+   margin-top: 15%;
+   font-size: 40px;
+   font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botoes {
+   display: flex;
+}
+
+.botao {
+   background-color: rgba(0,0,0,.50);
+   border: none;
+   color: var(--branco);
+
+   padding: 10px 20px;
+   margin-right: 15px;
+   font-size: 12px;
+
+   cursor: pointer;
+   border: 1px solid black;
+   transition: .3s ease all;
+   border-radius: 5px;
+}
+
+.botao:hover {
+   background-color: var(--branco);
+   color: black;
+   transition: .3s ease all;
+   border-radius: 5px;
+}
+
+i {
+   margin-right: 5px;
+}
+
+.container {
+   margin-left: 20px;
+   margin-right: 10px;
+}
+
+.filmePrincipal .container {
+   width: 55%;
+}
+
+.boxFilme {
+   display: block;
+   height: 50%;
+   width: 50%;
+}
+
+.carroselFilmes {
+   margin-top: 10px
+}
